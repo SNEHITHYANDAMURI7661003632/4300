@@ -1,0 +1,109 @@
+#1
+print("area of the rectangle")
+length=int(input("enter the length:"))
+width=int(input("enter the width"))
+
+area=length*width
+print(area)
+
+#2
+print("body mass index")
+weight=float(input("enter the weight:"))
+h=float(input("enter the height:"))
+
+bmi=weight/pow(h,2)
+print(bmi)
+
+#3
+students={"snehith":200,"manju":500,"vaish":250}
+
+print(students['snehith'])
+
+#4
+age=int(input("enter your age:"))
+if age>=18:
+  print("you are major")
+else:
+  print("you are a minor")
+
+#5
+for i in range(0,51):
+  if i%2==0:
+    print(i)
+
+#7
+def average(numbers):
+    if len(numbers) == 0:
+        return None
+    else:
+        return sum(numbers) / len(numbers)
+list = [1, 2, 3, 6]
+average(list)
+
+#6
+
+password="snehith"
+def password():
+  pass_1=input("password:")
+  if pass_1 is not password:
+    return password()
+  else:
+    print("success")
+#8
+def Check(string, vowels):
+	final = [each for each in string if each in vowels]
+	print(len(final))
+	print(final)
+
+string = "snehith"
+vowels = "AaEeIiOoUu"
+Check(string, vowels);
+
+#9
+from datetime import datetime
+now=datetime.now()
+print(now)
+
+#10
+def add():
+  try:
+    n1=int(input("enter the num1:"))
+    n2=int(input("enter the num2:"))
+    a=n1+n2
+    print(a)
+  except:
+    print("not valid,please type a integer")
+add()
+
+#11
+try:
+  n1=int(input("enter the number"))
+except Exception as e:
+  print(e)
+
+#12
+def division():
+  try:
+    n1=int(input("enter the num1:"))
+    n2=int(input("enter the num2:"))
+    a=n1/n2
+    print(a)
+  except:
+    print("not valid,please type a integer")
+division()
+
+#13
+with open('script.txt','w')as f:
+  f.write("hello,python!")
+  f.close()
+
+#14
+with open('script.txt','r') as g:
+  print(g.read())
+
+#15
+with open('script.txt','a') as g:
+  g.write("this is snehith")
+  g.close()
+with open('script.txt','r') as h:
+  print(h.read())
